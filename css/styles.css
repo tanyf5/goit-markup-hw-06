@@ -221,8 +221,8 @@ fieldset {
 
 .section-header-one {
     background-color: #2e2f42;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 72px;
+    padding-bottom: 72px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -231,16 +231,20 @@ fieldset {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 1440px;
+    width: 320px;
+    margin: 0 auto;
 }
 
 .header-one {
-    font-size: 56px;
-    line-height: 1.07;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
     text-align: center;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.72px;
     color: #ffffff;
-    max-width: 496px;
+    max-width: 200px;
     margin: auto;
 }
 
@@ -844,6 +848,26 @@ fieldset {
         max-width: 768px;
     }
 
+    .section-header-one {
+        padding-top: 112px;
+        padding-bottom: 112px;
+        width: 768px;
+    }
+
+    .header-one {
+        font-family: "Roboto", sans-serif;
+        font-size: 56px;
+        font-style: normal;
+        line-height: 60px;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 1.12px;
+        color: #ffffff;
+        max-width: 496px;
+        margin: auto;
+    }
+
+
     .section-two-advantages {
         padding-top: 96px;
         padding-bottom: 96px;
@@ -907,6 +931,25 @@ fieldset {
         padding-right: 15px;
         column-gap: 24px;
         row-gap: 48px;
+    }
+
+    .section-header-one {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        width: 1440px;
+    }
+
+    .header-one {
+        font-family: "Roboto", sans-serif;
+        font-size: 56px;
+        font-style: normal;
+        line-height: 60px;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 1.12px;
+        color: #ffffff;
+        max-width: 496px;
+        margin: auto;
     }
 
     .section-two-advantages {
