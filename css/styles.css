@@ -55,14 +55,18 @@ fieldset {
 }
 
 .container-footer {
+    max-width: 1158px;
     display: flex;
-    align-items: baseline;
     max-width: 1158px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    column-gap: 24px;
-    row-gap: 48px;
+    gap: 72px;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.container-footer:not(:first-child) {
+    justify-content: center;
+    align-items: center;
 }
 
 .ul-ul {
@@ -412,9 +416,9 @@ fieldset {
 }
 
 .page-footer {
+    max-width: 100%;
     background-color: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 96px 16px;
 }
 
 .footer-logo-par {
@@ -429,7 +433,7 @@ fieldset {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
-    min-width: 264px;
+    max-width: 264px;
 }
 
 .footer-list {
@@ -502,6 +506,7 @@ fieldset {
     max-width: 208px;
     justify-content: center;
     gap: 16px;
+    flex-shrink: 0;
     margin: 0 auto;
 }
 
@@ -512,6 +517,13 @@ fieldset {
 .li-soc-m-footer {
     width: 40px;
     height: 40px;
+}
+
+.div-footer-mob {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .backdrop {
@@ -823,9 +835,7 @@ fieldset {
 }
 
 .div-subscribe {
-    width: 453px;
-    height: 80px;
-    margin-left: 80px;
+    width: 288px;
 }
 
 
@@ -864,6 +874,29 @@ fieldset {
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 24px;
+    }
+
+    .page-footer {
+        padding: 0;
+    }
+
+    .container-footer {
+        display: flex;
+        align-items: baseline;
+        max-width: 1158px;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 96px 108px;
+    }
+
+    .div-footer-mob {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .form-footer {
+        flex-direction: row;
     }
 }
 
@@ -938,4 +971,28 @@ fieldset {
         color: #2e2f42;
         text-align: start;
     }
+
+    .page-footer {
+        padding: 100px 156px;
+    }
+
+    .container-footer {
+        max-width: 1158px;
+        display: flex;
+        margin: 0 auto;
+        gap: 80px;
+        flex-direction: row;
+        padding: 0;
+        flex-wrap: nowrap;
+    }
+
+    .div-subscribe {
+        width: 453px;
+        height: 80px;
+    }
+
+    .footer-logo-par {
+        margin-right: 40px;
+    }
+
 }
