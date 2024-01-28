@@ -222,6 +222,107 @@ fieldset {
     margin-right: 8px;
 }
 
+.mob-menu-div {
+    position: fixed;
+    top: 0;
+    width: 320px;
+    height: 640px;
+    padding: 72px 16px 40px 16px;
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.menu-close-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #E7E9FC;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 24px;    
+    top: 24px;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-ul-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.menu-nav-link-one {
+    color: #404BBF;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.menu-nav-link {
+    color: #2E2F42;
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.menu-nav {
+    margin-bottom: 168px;
+}
+
+.menu-ul-nav-address {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.menu-link-address-one {
+    color: #4D5AE5;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+.menu-link-address {
+    color: #434455;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+.menu-social-media-four-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 0 auto;
+}
+
+.menu-li-social-media-link {
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+}
+
 .section-header-one {
     background-color: #2e2f42;
     padding-top: 72px;
@@ -540,6 +641,8 @@ fieldset {
     top: 0;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .modal {
@@ -847,6 +950,10 @@ fieldset {
 
 
 @media screen and (min-width: 768px) {
+    .mob-menu-div {
+        display: none;
+    }
+
     .container {
         max-width: 768px;
     }
@@ -978,6 +1085,10 @@ fieldset {
 }
 
 @media screen and (min-width: 1158px) {
+    .mob-menu-div {
+        display: none;
+    }
+
     .container {
         max-width: 1158px;
         padding-left: 15px;
