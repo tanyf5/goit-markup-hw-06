@@ -448,7 +448,7 @@ fieldset {
 }
 
 .footer-logo-par {
-    margin-right: 120px;
+    margin: 0 auto;
 }
 
 .footer-paragraph {
@@ -1053,7 +1053,7 @@ fieldset {
 
     .page-footer {
         padding: 0;
-        width: 1158px;
+        width: 100%;
     }
 
     .container-footer {
@@ -1075,6 +1075,23 @@ fieldset {
     .div-footer-mob {
         justify-content: flex-start;
         align-items: flex-start;
+    }
+
+    .div-subscribe {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .footer-title-soc-m {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .social-media-four-icons-footer {
+        margin-top: 16px;
     }
 
     .form-footer {
@@ -1102,7 +1119,10 @@ fieldset {
     .header {
         display: flex;
         padding: 24px 16px;
-        max-width: 1158px;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .ul-nav {
@@ -1230,8 +1250,10 @@ fieldset {
     }
 
     .container-footer {
-        max-width: 1158px;
+        width: 100%;
         display: flex;
+        align-items: center;
+        justify-content: center;
         margin: 0 auto;
         gap: 80px;
         flex-direction: row;
@@ -1242,6 +1264,8 @@ fieldset {
     .div-subscribe {
         width: 453px;
         height: 80px;
+        display: flex;
+        flex-direction: column;
     }
 
     .footer-logo-par {
